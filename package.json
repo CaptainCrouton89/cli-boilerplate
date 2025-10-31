@@ -4,7 +4,7 @@
   "description": "Generic CLI boilerplate template for building command-line tools with oclif",
   "type": "module",
   "bin": {
-    "cli": "./bin/cli"
+    "media-tool": "./bin/media-cli"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -40,10 +40,14 @@
   },
   "dependencies": {
     "@oclif/core": "^4.0.0",
-    "dotenv": "^16.4.5"
+    "@r-cli/sdk": "^1.1.115",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^21.0.0",
+    "puppeteer-screen-recorder": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "@types/puppeteer": "^7.0.4",
     "oclif": "^4.22.38",
     "tsc-alias": "^1.8.16",
     "typescript": "^5.3.3"
@@ -52,8 +56,8 @@
     "node": ">=18.0.0"
   },
   "oclif": {
-    "bin": "cli",
-    "dirname": "cli",
+    "bin": "media-tool",
+    "dirname": "media-tool",
     "commands": "./lib/commands",
     "topicSeparator": ":"
   }
